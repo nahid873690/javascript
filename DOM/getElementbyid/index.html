@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementsBy</title>
+    <style>
+        h1{
+            color:gold;
+        }
+        #food-title{
+            color:green;
+        }
+        .bg-red{
+            background-color:red;
+        }
+        .big{
+            font-size:3em;
+        }
+        .bold{
+            font-weight:700;
+        }
+        .food .foreign{
+            font-weight:700;
+        }
+    </style>
+    <link rel="stylesheets" href="css.css">
+</head>
+<body>
+    <main id="main-container">
+        <section id="old-dhaka" class="songs">
+            <h1>Wellcome to my DOM</h1>
+            <p>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Laboriosam id accusantium necessitatibus, fugiat architecto itaque quam iure error, obcaecati labore recusandae in. Eum sapiente quibusdam cumque provident, distinctio ullam nulla?</p>
+            <h1>asdf <span>Some Text</span></h1>
+            <ul>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+                <li id="band" class="">jalali set</li>
+                <li>Dom De re Baba</li>
+            </ul>
+        </section>
+        <section class="food">
+            <h1 id="food-title">Food I love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul id="player-list">
+                <li>Messi</li>
+                <li>Pele</li>
+                <li>Ronalda</li>
+                <li>Embape</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        const foodTitleH1 = document.getElementById('food-title');
+        // console.log(foodTitleH1.innerText);
+        foodTitleH1.innerText = 'Food I Love to eat'
+
+        const bandElement = document.getElementById('band');
+        bandElement.innerText = 'Jalali Sleeping band'
+
+        // get elements by class name
+        const foreignElements = document.getElementsByClassName('foreign');
+        // console.log(foreignElements);
+
+        for(const element of foreignElements){
+            // console.log|(element.innerHTML)
+        }
+
+        // query selector all
+    </script>
+    <script src="./cssinjs.js"></script>
+    <script src="./child.js"></script>
+    <script src="./append.js"></script>
+</body>
+</html>
